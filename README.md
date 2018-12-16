@@ -28,11 +28,11 @@ Here is an example of a Burn-down Graph.
 ![Burn-down](https://github.com/LukeFarren/TraceBall/blob/master/TraceballBurnDown.png)
 ## Paradigms
 
-A programming paradigm is a model of programming based on how a program is designed there are multiple paradigms including but not limited to Procedural, Object and Event-Driven paradigms.
+A programming paradigm is a model of programming based on how a program is designed, there are multiple paradigms including but not limited to Procedural, Object and Event-Driven paradigms.
 
  **Procedural Oriented Paradigms**
 
-Procedural Orientated Programming (sometimes known as Imperative Programming) is generally the first paradigm a programmer is likely to encounter and use. This is a linear in nature focusing on small blocks of code known as functions and subroutines that can be taken out and reused in the same application or simply added to another. (Brownlee, 2012).
+Procedural Orientated Programming (sometimes known as Imperative Programming) is generally the first paradigm a programmer is likely to encounter and use. This is linear in nature focusing on small blocks of code known as functions and subroutines that can be taken out and reused in the same application or simply added to another. (Brownlee, 2012).
 
 Here is an example of Procedural Oriented Programming, a simple calculation program in which addition can be changed out for division, multiplication and subtraction easily.
 
@@ -90,7 +90,9 @@ Here is an example of Object-Oriented Programming, using JavaScript.
 
 **Event-Driven Paradigms** 
 
-An event-driven paradigm is written to react and respond to inputs that are either user generated or system generated, an event is an occurrence that has an effect on the system hardware or software. e.g mouse X, Y mouse movement. (Rose, n.d.)
+An event-driven paradigm is written to react and respond to inputs that are either user generated or system generated, an event is an occurrence that has an effect on the system hardware or software. e.g mouse X, Y mouse movement. (Rose, n.d.).
+
+Here is an example of Event-Driven Paradigm. 
 		
 	this.canvas.addEventListener("mousemove", function (m) // uses mouse input to track the mouse position.
 		{
@@ -116,18 +118,20 @@ Each paradigm can be linked with one another in the following ways, Object-Orien
 Debugging is a process of elimination, its a method of identifying and limiting the number of bugs and glitches within a a piece of code. Unfortunately, the debugging process isn't without its own problems as eliminating one bug or error may cause other errors to appear.  (Unknown, n.d.)
 
 The first step in the debugging process is to identify an find the error, simple spelling an punctuation mistakes are usually the first problems that are encountered, a mistake such as end1; in the first section of code will show an error message in your IDE telling the user the problem and suggestions of how to fix it, however an IDE isn't perfect and will throw up an alternative such as 'enum' for coding in C++ . This can be easily avoided when checking code and sticking to the coding standards that was agreed upon before the project was started. Most IDE's will show the line of code that the problem has occurred on and will allow the user to step through each bit of code with errors usually displayed as Syntax errors. The main focus is on reading the error message and understanding what the error is telling the user, However, the user should not believe that an error has been identified or solved unless they can recreate it, a simple solution to fix end1; is to replace the 1 (one) with l (letter L) and the error can be easily reproduced, sometimes the errors can be more complicated and expected behaviours are not present, having other programmers is essential in this scenario as another person may be able to spot an error even if it does not present itself in the way of an error message or an error message that the user does not understand, discussing the code with other programmers will help validate that an error is present. 
-The next step is to analyse the error, using a bottom up approach, this allows the user to step up through the code to see how big of a problem the error is and whether its code breaking, does the fix of the error result in large sections of code having to be rewritten? After analysis the user will have to prove that the error found within the code is correct and how many other errors are either present or have the potential to be created if the error were to be removed or changed, by confiding in websites such as StackEdit with many users present, it enables a multitude of people to look at the users code and help come up with solutions, this is generally used for small projects. However, for larger programming projects an IDE such as Visual Studio can be used with a debugging tool called Snapshot to take a 'snapshot' of the error, this is essential if the program is live as it does not interrupt the user experience especially if the application is online based. A unique IDE Repl.IT allows the user cloud based programming and debugging, this is grants access to the code for the programmer as long as they have internet connection, this is especially useful for remote programming. The final step is implementing the solution and validating the results, with the help of the debugger and any other resources the user has used, they should have all relevant information that is required to fix the error. (Unknown, n.d.)
+The next step is to analyse the error, using a bottom up approach, this allows the user to step up through the code to see how big of a problem the error is and whether its code breaking, does the fix of the error result in large sections of code having to be rewritten? After analysis the user will have to prove that the error found within the code is correct and how many other errors are either present or have the potential to be created if the error were to be removed or changed, by confiding in websites such as StackEdit with many users present, it enables a multitude of people to look at the users code and help come up with solutions, this is generally used for small projects. However, for larger programming projects an IDE such as Visual Studio can be used with a debugging tool called Snapshot to take a 'snapshot' of the error, this is essential if the program is live as it does not interrupt the user experience especially if the application is online based. A unique IDE Repl.IT allows the user cloud based programming and debugging, this grants access to the code for the programmer as long as they have internet connection, this is especially useful for remote programming. The final step is implementing the solution and validating the results, with the help of the debugger and any other resources the user has used, they should have all relevant information that is required to fix the error. (Unknown, n.d.)
 
 
 ## **Coding Standards**
 
 Various coding standards are used around the world, many companies use their own standard such as Google with its own GitHub repository dedicated to each of the different codes. A coding standard is a formal way of displaying code in order for the code to be readable and presentable. Its a way of being organized in a fashion where somebody can come back and be able to understand what the original programmer was doing, this consists of;
 
-* Using A, B ,C to represent integers - This makes it easier to understand the code easier as using any other characters for such a small program would be quite confusing.
+* Using A, B ,C to represent integers - This makes it easier to understand the code as using any other characters for such a small program would be quite confusing.
 * Indentation - This is to ensure that the code has structure and is organised into sections, one can easily define each block of code.
 * Consistent use of punctuation - This is so that the program looks even when running.
-* Comments on code sections - This is used so that the programmer can look back on their work and be able to understand what each section of code does without having to relearn what was done, this is also helpful for any programmers who may also work on the code. It stops confusion, such as the case for the example a comment allows the user to easily change between different calculation processes.
+* Comments on code sections - This is used so that the programmer can look back on their work and be able to understand what each section of code does without having to relearn what was done, this is also helpful for any other programmers who may also work on the code. It stops confusion, such as the case for the example a comment allows the user to easily change between different calculation processes.
 * Consistent use of inputs and outputs - for this code cout << endl; was used twice so that each output was separated when running the program, simply for aesthetics.
+* Curly brackets - This is used so that the IDE compiler knows what is part of a function and what is not.
+* Semicolons -  Are used to end lines so that the compiler knows to look at the next line of code.
 
 Here is an example of the coding standards discussed.
 
